@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="test.css" />
+    <title>Clock Time</title>
+  </head>
+  <body>
+    <!-- 노래 -->
+    <div id="music">
+      <audio src="./music/bgm1.mp3"></audio>
+      <button id="play-button">
+        <i class="fa fa-play fa-2x"></i>
+      </button>
+    </div>
+    <main>
+      <div>
+        <!-- 시계 -->
+        <h1 id="clock"></h1>
+        <h3 id="weekday"></h3>
+      </div>
+
+      <div>
+        <!-- 로그인 -->
+        <form id="login-form">
+          <input
+            id="login-id"
+            type="text"
+            placeholder="Please enter your name."
+            required
+          />
+          <!-- <input type="submit" value="login" /> -->
+        </form>
+        <!-- 환영인사 -->
+        <h1 id="greeting" class="hidden"></h1>
+      </div>
+
+      <div>
+        <!-- 할 일 -->
+        <form id="todo-form" class="hidden">
+          <input
+            type="text"
+            id="todo-input"
+            required
+            placeholder="What is your main focus for today?"
+          />
+          <!-- <input type="submit" value="추가" /> -->
+        </form>
+      </div>
+
+      <div class="scroll">
+        <ul id="todo-list"></ul>
+      </div>
+
+      <div id="quote">
+        <!-- 명언 -->
+        <h2 id="content"></h2>
+        <h4 id="author"></h4>
+      </div>
+    </main>
+    <script src="greeting.js"></script>
+    <script src="clock.js"></script>
+    <script src="wise_saying.js"></script>
+    <script src="todo.js"></script>
+    <script src="music.js"></script>
+  </body>
+</html>
