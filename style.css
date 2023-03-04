@@ -13,6 +13,7 @@ button,
 span,
 input {
   font-family: 'SF Pro';
+  src: url('./SF-Pro.eot');
   font-weight: 300;
   color: white;
 }
