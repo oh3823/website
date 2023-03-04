@@ -1,3 +1,7 @@
+@font-face {
+  font-family: 'SF Pro';
+  src: url('./SF-Pro.ttf');
+}
 .hidden {
   display: none;
 }
@@ -13,7 +17,6 @@ button,
 span,
 input {
   font-family: 'SF Pro';
-  src: url('./SF-Pro.ttf') format('truetype');
   font-weight: 300;
   color: white;
 }
