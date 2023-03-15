@@ -46,4 +46,11 @@ if (username) {
   login_form.addEventListener('submit', onSubmit);
 }
 
-greetingtext.addEventListener('dblclick', logout);
+// greetingtext.addEventListener('dblclick', logout);
+
+greetingtext.addEventListener('dblclick', () => {
+  greetingtext.classList.add('hidden');
+  _toDoForm.classList.add('hidden');
+  localStorage.clear();
+  login_form.classList.remove('hidden');
+});
