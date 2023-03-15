@@ -10,9 +10,13 @@
     />
     <link rel="stylesheet" href="style.css" />
     <link rel="icon" href="icon.svg" />
-    <title>Clock Time</title>
+    <title>Hello</title>
   </head>
   <body>
+    <img
+      src="https://wallpapers.com/images/file/1920x1080-hd-nature-alpenglow-0dg5rw0rk6rry9lf.jpg"
+      alt=""
+    />
     <!-- 노래 -->
     <audio src="./music/bgm1.mp3"></audio>
     <button id="play-button">
@@ -29,10 +33,15 @@
       <div>
         <!-- 로그인 -->
         <form id="login-form">
-          <input id="login-id" type="text" placeholder="name" required />
+          <input
+            id="login-id"
+            type="text"
+            placeholder="Please enter your name."
+            required
+          />
         </form>
         <!-- 환영인사 -->
-        <h1 id="greeting"></h1>
+        <h1 id="greeting" class="hidden"></h1>
       </div>
 
       <div>
@@ -57,10 +66,10 @@
         <h4 id="author"></h4>
       </div>
     </main>
-    <script src="greeting.js"></script>
-    <script src="clock.js"></script>
-    <script src="wise_saying.js"></script>
-    <script src="todo.js"></script>
-    <script src="music.js"></script>
+    <script src="./js/greeting.js"></script>
+    <script src="./js/clock.js"></script>
+    <script src="./js/quote.js"></script>
+    <script src="./js/todo.js"></script>
+    <script src="./js/music.js"></script>
   </body>
 </html>

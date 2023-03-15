@@ -1,17 +1,24 @@
-const clock = document.querySelector('#clock');
-const weekday = document.getElementById('weekday');
-const week = ['일', '월', '화', '수', '목', '금', '토'];
+const clock = document.querySelector('h1#clock');
+const weekday = document.querySelector('#weekday');
+
+let week = ['일', '월', '화', '수', '목', '금', '토'];
 
 function getTime() {
   const date = new Date();
-  const hours = String(date.getHours()).padStart(2, '0');
-  const minutes = String(date.getMinutes()).padStart(2, '0');
-  clock.innerHTML = `${hours}:${minutes}`;
+  const hour = date.getHours();
+  const minute = date.getMinutes();
+  const second = date.getSeconds();
 
-  const month = date.getMonth() + 1;
-  const day = date.getDate();
-  const _day = date.getDay();
-  weekday.innerHTML = `${month}월 ${day}일 ${week[_day]}요일`;
+  const month = date.getMonth() + 1; // 몇 월인지
+  const _date = date.getDate(); // 몇 일
+  const day = date.getDay(); // 무슨 요일인지
+
+  clock.innerHTML = `${hour < 10 ? '0' + hour : hour}:${
+    minute < 10 ? '0' + minute : minute
+  }`;
+  // :${second < 10 ? '0' + second : second}`; 지우기
+
+  weekday.innerHTML = `${month}월 ${_date}일 ${week[day]}요일`;
 }
 
 getTime();
