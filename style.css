@@ -36,56 +36,55 @@ img {
 }
 #play-button {
   position: fixed;
-  top: 2%;
-  right: 1%;
+  top: 20px;
+  right: 20px;
   background-color: transparent;
   border: none;
 }
 
 main {
-  max-width: 1200px;
+  max-width: 75vw;
   margin: auto;
 }
 
 #clock {
-  font-size: 108px;
+  font-size: 13vh;
   font-weight: 500;
 
   text-align: center;
 
   margin: 0;
-  margin-top: 10%;
+  margin-top: 10vh;
   animation: slidein 0.5s;
 }
 
 #weekday {
-  font-size: 24px;
+  font-size: 3vh;
   text-align: center;
   margin-top: 0;
-  margin-bottom: 10%;
+  margin-bottom: 5vh;
   animation: slidein 0.5s;
 }
 
 form {
-  max-width: 600px;
+  max-width: 50vw;
   margin: auto;
-  margin-top: 4%;
   animation: slidein 0.5s;
 }
 
 input {
-  width: 600px;
-  height: 70px;
+  width: 50vw;
+  height: 8vh;
 
   text-align: center;
 
-  border-color: aliceblue;
+  border-color: whitesmoke;
   background-color: transparent;
   border-top: none;
   border-left: none;
   border-right: none;
 
-  font-size: 32px;
+  font-size: 4vh;
 }
 
 input::placeholder {
@@ -93,18 +92,17 @@ input::placeholder {
 }
 
 #greeting {
-  font-size: 64px;
+  font-size: 7vh;
   font-weight: 400;
   text-align: center;
-  margin: 0;
-  margin-top: 2%;
-
+  margin: 0 0;
+  margin-bottom: 3vh;
   animation: slidein 0.5s;
 }
 
 .scroll {
-  width: 550px;
-  height: 300px;
+  width: 50vw;
+  height: 33vh;
   overflow-y: scroll;
 
   margin: auto;
@@ -116,7 +114,7 @@ input::placeholder {
 
 li {
   list-style: none;
-  font-size: 18px;
+  font-size: 3vh;
 
   animation: slidein 0.5s;
 }
@@ -124,29 +122,27 @@ li {
 button {
   background-color: transparent;
   border: none;
-  font-size: 20px;
+  font-size: 3vh;
 }
 
 .quote {
   position: fixed;
   left: 0%;
   right: 0%;
-  bottom: 3%;
+  bottom: 2vh;
   text-align: center;
 
-  animation: slidein 0.5s;
+  animation: slidein 0.2s;
 }
 
 #content {
-  font-size: 24px;
-
-  margin: 0;
+  margin: 0 0;
+  margin-bottom: 2vh;
 }
 
 #author {
-  font-size: 20px;
-  margin: 0;
-  margin-top: 2%;
+  font-size: 2vh;
+  margin: 0 0;
 }
 
 @keyframes slidein {
